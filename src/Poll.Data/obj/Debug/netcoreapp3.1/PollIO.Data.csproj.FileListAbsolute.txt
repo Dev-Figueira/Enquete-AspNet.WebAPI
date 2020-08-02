@@ -1,0 +1,13 @@
+C:\Users\rodrigo.ramalho\Desktop\Enquete-AspNet.WebAPI\src\Poll.Data\bin\Debug\netcoreapp3.1\PollIO.Business.dll
+C:\Users\rodrigo.ramalho\Desktop\Enquete-AspNet.WebAPI\src\Poll.Data\obj\Debug\netcoreapp3.1\PollIO.Data.AssemblyInfoInputs.cache
+C:\Users\rodrigo.ramalho\Desktop\Enquete-AspNet.WebAPI\src\Poll.Data\obj\Debug\netcoreapp3.1\PollIO.Data.AssemblyInfo.cs
+C:\Users\rodrigo.ramalho\Desktop\Enquete-AspNet.WebAPI\src\Poll.Data\obj\Debug\netcoreapp3.1\PollIO.Data.csprojAssemblyReference.cache
+C:\Users\rodrigo.ramalho\Desktop\Enquete-AspNet.WebAPI\src\Poll.Data\bin\Debug\netcoreapp3.1\PollIO.Data.deps.json
+C:\Users\rodrigo.ramalho\Desktop\Enquete-AspNet.WebAPI\src\Poll.Data\bin\Debug\netcoreapp3.1\PollIO.Data.dll
+C:\Users\rodrigo.ramalho\Desktop\Enquete-AspNet.WebAPI\src\Poll.Data\bin\Debug\netcoreapp3.1\PollIO.Business.pdb
+C:\Users\rodrigo.ramalho\Desktop\Enquete-AspNet.WebAPI\src\Poll.Data\obj\Debug\netcoreapp3.1\PollIO.Data.csproj.CopyComplete
+C:\Users\rodrigo.ramalho\Desktop\Enquete-AspNet.WebAPI\src\Poll.Data\bin\Debug\netcoreapp3.1\PollIO.Data.runtimeconfig.json
+C:\Users\rodrigo.ramalho\Desktop\Enquete-AspNet.WebAPI\src\Poll.Data\bin\Debug\netcoreapp3.1\PollIO.Data.runtimeconfig.dev.json
+C:\Users\rodrigo.ramalho\Desktop\Enquete-AspNet.WebAPI\src\Poll.Data\bin\Debug\netcoreapp3.1\PollIO.Data.pdb
+C:\Users\rodrigo.ramalho\Desktop\Enquete-AspNet.WebAPI\src\Poll.Data\obj\Debug\netcoreapp3.1\PollIO.Data.dll
+C:\Users\rodrigo.ramalho\Desktop\Enquete-AspNet.WebAPI\src\Poll.Data\obj\Debug\netcoreapp3.1\PollIO.Data.pdb

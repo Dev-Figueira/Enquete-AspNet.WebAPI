@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rodrigo.ramalho\\Desktop\\Enquete-AspNet.WebAPI\\src\\Poll.Business\\Poll.Business.csproj",
-      "projectName": "Poll.Business",
-      "projectPath": "C:\\Users\\rodrigo.ramalho\\Desktop\\Enquete-AspNet.WebAPI\\src\\Poll.Business\\Poll.Business.csproj",
+      "projectUniqueName": "C:\\Users\\rodrigo.ramalho\\Desktop\\Enquete-AspNet.WebAPI\\src\\Poll.Business\\PollIO.Business.csproj",
+      "projectName": "PollIO.Business",
+      "projectPath": "C:\\Users\\rodrigo.ramalho\\Desktop\\Enquete-AspNet.WebAPI\\src\\Poll.Business\\PollIO.Business.csproj",
       "packagesPath": "C:\\Users\\rodrigo.ramalho\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\rodrigo.ramalho\\Desktop\\Enquete-AspNet.WebAPI\\src\\Poll.Business\\obj\\",
       "projectStyle": "PackageReference",

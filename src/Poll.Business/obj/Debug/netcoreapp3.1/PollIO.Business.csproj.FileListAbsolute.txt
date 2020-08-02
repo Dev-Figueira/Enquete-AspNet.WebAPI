@@ -1,0 +1,8 @@
+C:\Users\rodrigo.ramalho\Desktop\Enquete-AspNet.WebAPI\src\Poll.Business\bin\Debug\netcoreapp3.1\PollIO.Business.deps.json
+C:\Users\rodrigo.ramalho\Desktop\Enquete-AspNet.WebAPI\src\Poll.Business\bin\Debug\netcoreapp3.1\PollIO.Business.dll
+C:\Users\rodrigo.ramalho\Desktop\Enquete-AspNet.WebAPI\src\Poll.Business\bin\Debug\netcoreapp3.1\PollIO.Business.pdb
+C:\Users\rodrigo.ramalho\Desktop\Enquete-AspNet.WebAPI\src\Poll.Business\obj\Debug\netcoreapp3.1\PollIO.Business.csprojAssemblyReference.cache
+C:\Users\rodrigo.ramalho\Desktop\Enquete-AspNet.WebAPI\src\Poll.Business\obj\Debug\netcoreapp3.1\PollIO.Business.AssemblyInfoInputs.cache
+C:\Users\rodrigo.ramalho\Desktop\Enquete-AspNet.WebAPI\src\Poll.Business\obj\Debug\netcoreapp3.1\PollIO.Business.AssemblyInfo.cs
+C:\Users\rodrigo.ramalho\Desktop\Enquete-AspNet.WebAPI\src\Poll.Business\obj\Debug\netcoreapp3.1\PollIO.Business.dll
+C:\Users\rodrigo.ramalho\Desktop\Enquete-AspNet.WebAPI\src\Poll.Business\obj\Debug\netcoreapp3.1\PollIO.Business.pdb
