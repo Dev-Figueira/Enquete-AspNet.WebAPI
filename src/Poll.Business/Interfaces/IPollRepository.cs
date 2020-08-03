@@ -1,12 +1,14 @@
 ﻿using PollIO.Business.Models;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace PollIO.Business.Interfaces
 {
     public interface IPollRepository : IRepository<Poll>
     {
-        Task<Models.Poll> GetPollViews(Guid id);
-        Task<Models.Poll> GetPollOptions(Guid id);
+        IEnumerable<object> GetPollViews(int id);
+        Task<Poll> GetPollAndOptions(int id);
+        Task<IEnumerable<Poll>> GetPollAndOptions();
     }
 }

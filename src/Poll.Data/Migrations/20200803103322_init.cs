@@ -1,9 +1,8 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace PollIO.Data.Migrations
 {
-    public partial class inicial : Migration
+    public partial class init : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -11,9 +10,9 @@ namespace PollIO.Data.Migrations
                 name: "Polls",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(nullable: false),
-                    Description = table.Column<string>(type: "varchar(200)", nullable: false),
-                    Views = table.Column<string>(type: "varchar(50)", nullable: false)
+                    Id = table.Column<int>(nullable: false),
+                    Poll_description = table.Column<string>(type: "varchar(200)", nullable: false),
+                    Views = table.Column<string>(type: "varchar(50)", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -24,10 +23,10 @@ namespace PollIO.Data.Migrations
                 name: "OptionsPolls",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(nullable: false),
-                    PollId = table.Column<Guid>(nullable: false),
+                    Id = table.Column<int>(nullable: false),
+                    PollId = table.Column<int>(nullable: false),
                     Description = table.Column<string>(type: "varchar(200)", nullable: false),
-                    Votes = table.Column<string>(type: "varchar(50)", nullable: false)
+                    Votes = table.Column<string>(type: "varchar(50)", nullable: true)
                 },
                 constraints: table =>
                 {

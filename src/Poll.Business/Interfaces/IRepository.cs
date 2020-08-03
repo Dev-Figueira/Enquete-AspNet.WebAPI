@@ -9,10 +9,10 @@ namespace PollIO.Business.Interfaces
     public interface IRepository<TEntity> : IDisposable where TEntity : Entity
     {
         Task Add(TEntity entity);
-        Task<TEntity> GetById(Guid id);
+        Task<TEntity> GetById(int id);
         Task<List<TEntity>> GetAll();
         Task Update(TEntity entity);
-        Task Remover(Guid id);
+        Task Remover(int id);
         Task<IEnumerable<TEntity>> Find(Expression<Func<TEntity, bool>> predicate);
         Task<int> SaveChanges();
     }

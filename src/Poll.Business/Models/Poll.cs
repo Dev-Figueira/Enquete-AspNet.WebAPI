@@ -4,7 +4,7 @@ namespace PollIO.Business.Models
 {
     public class Poll : Entity
     {
-        public string Description { get; set; }
+        public string Poll_description { get; set; }
 
         public string Views { get; set; }
 

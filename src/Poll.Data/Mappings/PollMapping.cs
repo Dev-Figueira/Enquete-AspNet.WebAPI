@@ -10,16 +10,13 @@ namespace PollIO.Data.Mappings
         {
             builder.HasKey(p => p.Id);
 
-            builder.Property(p => p.Description)
+            builder.Property(p => p.Poll_description)
                 .IsRequired()
                 .HasColumnType("varchar(200)");
 
             builder.Property(p => p.Views)
-                .IsRequired()
                 .HasColumnType("varchar(50)");
 
-
-            // 1 : N => Poll : Options
             builder.HasMany(p => p.Options)
                 .WithOne(o => o.Poll)
                 .HasForeignKey(o => o.PollId);

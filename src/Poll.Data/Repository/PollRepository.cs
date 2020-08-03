@@ -1,7 +1,12 @@
-﻿using PollIO.Business.Interfaces;
+﻿using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using PollIO.Business.Interfaces;
 using PollIO.Business.Models;
+using PollIO.Data.Context;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
@@ -9,54 +14,50 @@ namespace PollIO.Data.Repository
 {
     public class PollRepository : Repository<Poll>, IPollRepository
     {
-        public Task Add(Poll entity)
+        public PollRepository(PollDbContext context) : base(context)
         {
-            throw new NotImplementedException();
+        }
+        
+        public async Task<IEnumerable<Poll>> GetPollAndOptions()
+        {
+            return await Db.Polls.AsNoTracking()
+                .Include(o => o.Options).ToListAsync();
         }
 
-        public void Dispose()
+        public async Task<Poll> GetPollAndOptions(int id)
         {
-            throw new NotImplementedException();
+            return await Db.Polls.AsNoTracking()
+                .Include(o => o.Options)
+                .FirstOrDefaultAsync(o=> o.Id == id);
         }
 
-        public Task<IEnumerable<Poll>> Find(Expression<Func<Poll, bool>> predicate)
+        public IEnumerable<object> GetPollViews(int id)
         {
-            throw new NotImplementedException();
-        }
+            var poll = GetPollAndOptions(id);
 
-        public Task<List<Poll>> GetAll()
-        {
-            throw new NotImplementedException();
-        }
+            if (poll == null) return null;
 
-        public Task<Poll> GetById(Guid id)
-        {
-            throw new NotImplementedException();
-        }
+            var pollDto = new
+            {
+                poll.Result.Views
+            };
 
-        public Task<Poll> GetPollOptions(Guid id)
-        {
-            throw new NotImplementedException();
-        }
+            string jsonPoll = JsonConvert.SerializeObject(pollDto);
+            JObject jPoll = JObject.Parse(jsonPoll);
 
-        public Task<Poll> GetPollViews(Guid id)
-        {
-            throw new NotImplementedException();
-        }
+            var options = poll.Result.Options.OrderBy(x => x.PollId).Select(p => new
+            {
+                option_id = p.PollId,
+                qty = p.Votes ?? "0",
+            });
 
-        public Task Remover(Guid id)
-        {
-            throw new NotImplementedException();
-        }
+            string jsonOptions = JsonConvert.SerializeObject(options);
 
-        public Task<int> SaveChanges()
-        {
-            throw new NotImplementedException();
-        }
+            JArray jOptions = JArray.Parse(jsonOptions);
 
-        public Task Update(Poll entity)
-        {
-            throw new NotImplementedException();
+            jPoll.Add("options", jOptions);
+
+            return jPoll;
         }
     }
 }

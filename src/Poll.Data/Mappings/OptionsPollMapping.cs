@@ -15,7 +15,6 @@ namespace PollIO.Data.Mappings
                 .HasColumnType("varchar(200)");
 
             builder.Property(o => o.Votes)
-                .IsRequired()
                 .HasColumnType("varchar(50)");
 
             builder.ToTable("OptionsPolls");
