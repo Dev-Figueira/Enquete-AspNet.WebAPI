@@ -1,7 +1,4 @@
 ﻿using FluentValidation;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace PollIO.Business.Models.Validations
 {
@@ -9,7 +6,8 @@ namespace PollIO.Business.Models.Validations
     {
         public PollOptionsValidation()
         {
-
+            RuleFor(p => p.PollId.ToString())
+                .NotEmpty().WithMessage("O campo {PropertyName} precisa ser fornecido");
         }
     }
 }

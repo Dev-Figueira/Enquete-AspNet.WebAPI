@@ -237,3 +237,11 @@ C:\Users\rodrigo.ramalho\Desktop\Enquete-AspNet.WebAPI\src\PollIO.Test\obj\Debug
 C:\Users\rodrigo.ramalho\Desktop\Enquete-AspNet.WebAPI\src\PollIO.Test\obj\Debug\netcoreapp3.1\PollIO.Test.pdb
 C:\Users\rodrigo.ramalho\Desktop\Enquete-AspNet.WebAPI\src\PollIO.Test\bin\Debug\netcoreapp3.1\Castle.Core.dll
 C:\Users\rodrigo.ramalho\Desktop\Enquete-AspNet.WebAPI\src\PollIO.Test\bin\Debug\netcoreapp3.1\Moq.dll
+C:\Users\rodrigo.ramalho\Desktop\Enquete-AspNet.WebAPI\src\PollIO.Test\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\Users\rodrigo.ramalho\Desktop\Enquete-AspNet.WebAPI\src\PollIO.Test\bin\Debug\netcoreapp3.1\System.Web.Http.dll
+C:\Users\rodrigo.ramalho\Desktop\Enquete-AspNet.WebAPI\src\PollIO.Test\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\rodrigo.ramalho\Desktop\Enquete-AspNet.WebAPI\src\PollIO.Test\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\rodrigo.ramalho\Desktop\Enquete-AspNet.WebAPI\src\PollIO.Test\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\rodrigo.ramalho\Desktop\Enquete-AspNet.WebAPI\src\PollIO.Test\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\rodrigo.ramalho\Desktop\Enquete-AspNet.WebAPI\src\PollIO.Test\bin\Debug\netcoreapp3.1\Swashbuckle.Core.dll
+C:\Users\rodrigo.ramalho\Desktop\Enquete-AspNet.WebAPI\src\PollIO.Test\bin\Debug\netcoreapp3.1\PollIO.Api.xml

@@ -1,7 +1,4 @@
 ﻿using FluentValidation;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace PollIO.Business.Models.Validations
 {
@@ -9,7 +6,10 @@ namespace PollIO.Business.Models.Validations
     {
         public PollValidation()
         {
-            
+            RuleFor(p => p.Poll_description)
+                .NotEmpty().WithMessage("O campo {PropertyName} precisa ser fornecido")
+                .Length(2, 100)
+                .WithMessage("O campo {PropertyName} precisa ter entre {MinLength} e {MaxLength} caracteres");
         }
     }
 }

@@ -39,7 +39,7 @@ namespace PollIO.Data.Repository
 
             var pollDto = new
             {
-                poll.Result.Views
+                views = poll.Result.Views ?? "0"
             };
 
             string jsonPoll = JsonConvert.SerializeObject(pollDto);

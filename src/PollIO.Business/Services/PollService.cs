@@ -2,9 +2,7 @@
 using PollIO.Business.Models;
 using PollIO.Business.Models.Validations;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace PollIO.Business.Services

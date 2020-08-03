@@ -44,7 +44,16 @@ namespace PollIO.Api.Controllers
 
             if (poll == null) return NotFound();
 
-            return poll;
+            return Ok(new
+            {
+                option_id = poll.Id,
+                poll.Poll_description,
+                options = poll.Options.Select(o => new
+                {
+                    option_id = o.Id,
+                    option_description = o.Description,
+                })
+            });
         }
 
         [HttpPost]
@@ -60,6 +69,10 @@ namespace PollIO.Api.Controllers
         public async Task<ActionResult<PollDto>> AdicionarVoto(int id, OptionPollDto options)
         {
             if (!ModelState.IsValid) return CustomResponse(ModelState);
+
+            var poll = await _pollRepository.GetPollAndOptions(id);
+
+            if (poll == null) return NotFound();
 
             await _pollService.Vote(id, _mapper.Map<OptionsPoll>(options));
 
